@@ -3,9 +3,15 @@ import { NavLink ,Link , useNavigate } from 'react-router-dom'
 
 export default function LoginPage() {
 
-  let navigate = useNavigate()
+  // let navigate = useNavigate()
+  // const eventChangePage = (event) => {
+  //   event.preventDefault();
+  //   navigate("/register")
+  // }
+
+  let navigate = useNavigate() ;
   const eventChangePage = (event) => {
-    event.preventDefault();
+    event.preventDefault() ;
     navigate("/register")
   }
 
