@@ -34,6 +34,10 @@ export default function StateManagement() {
         [] // leave empty to run when component loads
     )
 
+    const handleName = (e) => {
+        setData(e.target.value)
+    }
+
 
 
   return (
@@ -61,7 +65,7 @@ export default function StateManagement() {
         </div>
     </div>
     
-    <div>
+    <div className='flex flex-col space-y-4'>
     <input
   className="border border-gray-400 p-2 rounded"
   placeholder="Type something..."
@@ -69,6 +73,7 @@ export default function StateManagement() {
     setData(e.target.value)
   }}
 />
+ <input className="border border-gray-400 p-2 rounded" placeholder='Type name ' onChange={handleName} />
 
     </div>
 
